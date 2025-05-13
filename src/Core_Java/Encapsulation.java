@@ -18,10 +18,20 @@ class Human{
         Name = n;
     }
     //Constructor
-    public Human(){
+    public Human(){ //Default Constructor
 //        System.out.println("In Constructor!!!");
         Name = "Sahin";
         age = 21;
+    }
+
+    public Human(String name) {
+        Name = name;
+        this.age = 12;
+    }
+
+    public Human(int a, String n){ //Parameterized Constructor
+        age = a;
+        Name = n;
     }
 }
 
@@ -36,6 +46,13 @@ public class Encapsulation {
 //        obj.setName("Sahin");
         System.out.println(obj.getAge());
         System.out.println(obj.getName());
+        Human obj1 = new Human(21,"Sayak");
+        System.out.println(obj1.getAge());
+        System.out.println(obj1.getName());
+
+        Human h = new Human("Abc");
+        System.out.println(obj1.getAge());
+        System.out.println(obj1.getName());
 
 
     }
