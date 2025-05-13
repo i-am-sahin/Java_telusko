@@ -17,6 +17,12 @@ class Human{
     public void setName(String n){
         Name = n;
     }
+    //Constructor
+    public Human(){
+//        System.out.println("In Constructor!!!");
+        Name = "Sahin";
+        age = 21;
+    }
 }
 
 public class Encapsulation {
@@ -26,8 +32,8 @@ public class Encapsulation {
 
 //        We are making your variable Private and the only way to access them with the Methods,So Basically we're binding our data with the methods ,notone outside the class can directly access the variables Directly. -- Here We are encapsulate Data and Methods and that is Encapsulation :) .
 
-        obj.setAge(21);
-        obj.setName("Sahin");
+//        obj.setAge(21);
+//        obj.setName("Sahin");
         System.out.println(obj.getAge());
         System.out.println(obj.getName());
 
