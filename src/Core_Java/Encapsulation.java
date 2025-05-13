@@ -55,5 +55,11 @@ public class Encapsulation {
         System.out.println(obj1.getName());
 
 
+        new Human(); //Anonymous Objects : Because This Object Don't Have a name; You can't use Anonymous object more then one's.
+
+        Human sahin; //Reference Creation
+        sahin = new Human();//Object Creation
+
+
     }
 }
