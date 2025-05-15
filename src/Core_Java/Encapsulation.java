@@ -61,5 +61,7 @@ public class Encapsulation {
         sahin = new Human();//Object Creation
 
 
+
+
     }
 }
