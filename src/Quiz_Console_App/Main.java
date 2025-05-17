@@ -6,6 +6,7 @@ public class Main {
         QuestionService service = new QuestionService();
 
         service.playQuiz();
+        service.printScore();
 
     }
 }

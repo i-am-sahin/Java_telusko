@@ -31,11 +31,26 @@ public class QuestionService {
             System.out.println(q.getOpt2());
             System.out.println(q.getOpt3());
             System.out.println(q.getOpt4());
+            System.out.println("Enter Your Answer : ");
             selection[i] = sc.nextLine();;
             i++;
         }
+        System.out.println("--------------------");
+        System.out.println("Your Answers");
         for(String s : selection){
             System.out.println(s);
         }
+        System.out.println("--------------------");
+    }
+
+    //Checking The Answer Given By User And return the score
+    public void printScore(){
+        int score = 0;
+        for (int i = 0; i<question.length;i++){
+            Question ques = question[i];
+            if (ques.getAnswer().equals(selection[i]))
+                score++;
+        }
+        System.out.println("Your Score is : " + score);
     }
 }
