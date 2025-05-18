@@ -1,9 +1,7 @@
 package AdvanceJava;
 
-class P{
-    public void show(){
-        System.out.println("In A show!");
-    }
+abstract class P{
+    public abstract void show();
 }
 
 public class AnonymousInnerClass {
