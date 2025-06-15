@@ -3,7 +3,7 @@ package AdvanceJava;
 public class FunctionalInterfaces {
     @java.lang.FunctionalInterface
     interface  A{
-        void show();
+        void show(int i);
 //        void hello();
     }
 //    class B implements A {
@@ -13,12 +13,11 @@ public class FunctionalInterfaces {
 //    }
 
     public static void main(String[] args) {
-        A obj = new A(){
-            @Override
-            public void show() {
-                System.out.println("In Show");
-            }
+        //Lamda Expression
+        A obj = (i)->{
+            System.out.println("In show " + i);
         };
+        obj.show(5);
     }
 
 }
