@@ -1,5 +1,5 @@
 package AdvanceJava;
-class Show1 extends Thread{
+class Show1 implements Runnable{
     public void run(){
         for (int i = 0; i < 100;i++){
             System.out.println("Hii!!!");
@@ -11,7 +11,7 @@ class Show1 extends Thread{
         }
     }
 }
-class Show2 extends Thread{
+class Show2 implements Runnable{
     public void run(){
         for (int i = 0; i < 100;i++){
             System.out.println("Hello!!!");
@@ -25,11 +25,17 @@ class Show2 extends Thread{
 }
 public class MultiThreading {
     public static void main(String[] args) {
-        Show1 obj1 = new Show1();
+        Runnable obj1 = new Show1();
         Show2 obj2 = new Show2();
-        System.out.println(obj1.getPriority());
-        obj1.setPriority(Thread.MAX_PRIORITY);
-        obj1.start();
-        obj2.start();
+
+        Thread t1 = new Thread(obj2);
+        Thread t2 = new Thread(obj1);
+
+        System.out.println(t1.getPriority());
+        t1.setPriority(Thread.MAX_PRIORITY);
+
+
+        t1.start();
+        t2.start();
     }
 }
