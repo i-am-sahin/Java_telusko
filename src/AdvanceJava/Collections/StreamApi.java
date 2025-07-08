@@ -21,12 +21,12 @@ public class StreamApi {
 //        }
 
 
-        Consumer<Integer> cons = (Integer n) -> System.out.println(n);
+//        Consumer<Integer> cons = (Integer n) -> System.out.println(n);
 
 
 
 
-        nums.forEach(cons);
+        nums.forEach(n -> System.out.println(n));
 
 
 
