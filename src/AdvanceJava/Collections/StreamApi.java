@@ -1,7 +1,9 @@
 package AdvanceJava.Collections;
 
+import java.lang.constant.Constable;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class StreamApi {
     public static void main(String[] args) {
@@ -18,7 +20,21 @@ public class StreamApi {
 //            System.out.println(n);
 //        }
 
-        nums.forEach(n -> System.out.println(n));
+
+        Consumer<Integer> cons = new Consumer<Integer>() {
+            @Override
+            public void accept(Integer n) {
+                System.out.println(n);
+            }
+        };
+
+
+        nums.forEach(cons);
+
+
+
+
+
 
 
 
