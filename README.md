@@ -26,14 +26,7 @@ Java_telusko/
 - ✅ Exception handling
 - ✅ File I/O, utility classes
 
-### 🔸 Advanced Java
-- 🔌 JDBC (MySQL, Oracle DB connections)
-- 🌐 Servlets & JSP (web development)
-- 🧵 Multithreading & concurrency
-- 🔗 Networking (sockets, URL handling)
-- 🔍 Reflection & Annotations
-- 🧠 Java 8+ features (Lambda, Stream API)
-- 📐 Basic design patterns
+
 
 ---
 
@@ -68,7 +61,7 @@ All contributions and suggestions are welcome 💬
 ## 📩 Contact
 
 **Sahin Islam**  
-📧 [LinkedIn](https://www.linkedin.com/in/sahinislam)  
+📧 LinkedIn: [Sahin Islam](https://www.linkedin.com/in/sahinislam)  
 📁 GitHub: [i-am-sahin](https://github.com/i-am-sahin)
 
 ---
