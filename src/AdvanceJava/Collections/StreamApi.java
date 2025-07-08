@@ -1,10 +1,9 @@
 package AdvanceJava.Collections;
 
 import java.lang.constant.Constable;
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
+import java.util.*;
 import java.util.stream.Stream;
+
 
 public class StreamApi {
     public static void main(String[] args) {
@@ -31,12 +30,46 @@ public class StreamApi {
 //
 //        int result = s3.reduce(0,(c,e) ->c+e);
 
+        //Implementing Filter Function
+//        Predicate<Integer> p = new Predicate<Integer>() {
+//            @Override
+//            public boolean test(Integer n) {
+//                return n % 2 == 0;
+//            }
+//        };
+                //Lamda Expression
+//        Predicate<Integer> p= n-> n%2==0;
+
+
+
+
+        //Implementing .map Function
+//        Function<Integer,Integer> fun = new Function<Integer, Integer>() {
+//            @Override
+//            public Integer apply(Integer n) {
+//                return n * 2;
+//            }
+//        };
+
+                //Lamda Expression
+//        Function<Integer,Integer> fun= n-> n*2;
+
+
+
       int result =   nums.stream()
-                        .filter(n -> n%2 == 0)
-                                .map(n -> n * 2)
+                        .filter(n -> n % 2 == 0)
+                                .map(n -> n* 2)
                                         .reduce(0,(c,e) -> c + e);
 
         System.out.println(result);
+
+
+       Stream<Integer> sortedValue =   nums.stream()
+                .filter(n -> n % 2 == 0)
+                .map(n -> n* 2)
+                .sorted();
+
+       sortedValue.forEach(n -> System.out.println(n));
 
 
 //        s3.forEach(n -> System.out.println(n));
@@ -62,5 +95,8 @@ public class StreamApi {
 //            }
 //        }
 //        System.out.println(sum);
+
+
+
     }
 }
