@@ -21,12 +21,9 @@ public class StreamApi {
 //        }
 
 
-        Consumer<Integer> cons = new Consumer<Integer>() {
-            @Override
-            public void accept(Integer n) {
-                System.out.println(n);
-            }
-        };
+        Consumer<Integer> cons = (Integer n) -> System.out.println(n);
+
+
 
 
         nums.forEach(cons);
