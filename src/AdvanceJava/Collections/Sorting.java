@@ -95,14 +95,13 @@ public class Sorting {
 
         //We can also manually Implement Comperator here And Override Comparable!!
 
-        Comparator<Student> compForStudent  = new Comparator<Student>() {
-            @Override
-            public int compare(Student i, Student j) {
-                if (i.age > j.age)
-                    return 1;
-                else
-                    return -1;
-            }
+        Comparator<Student> compForStudent = ( i, j) -> {
+//                if (i.age > j.age)
+//                    return 1;
+//                else
+//                    return -1;
+            return i.age > j.age ? 1 : -1;
+
         };
 
         studentDetails.add(new Student(21,"Sahin"));
