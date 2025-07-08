@@ -51,7 +51,7 @@ public class StreamApi {
 //            }
 //        };
 
-                //Lamda Expression
+                //Lambda Expression
 //        Function<Integer,Integer> fun= n-> n*2;
 
 
